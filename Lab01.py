@@ -13,7 +13,7 @@ for _ in range(100):
     raindrops.append((x, y))
 rain_direction = 0
 
-brightness = 0.1  
+brightness = 0.5 
 target_brightness = 0.1
 
 def draw_ground_and_sky():
@@ -277,4 +277,5 @@ glutIdleFunc(update_points)
 glutMouseFunc(mouse_listener)
 glutKeyboardFunc(keyboard_listener)
 glutSpecialFunc(special_key_listener)
+
 glutMainLoop()
